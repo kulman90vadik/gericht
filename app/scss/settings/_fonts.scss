@@ -1,8 +1,40 @@
-// @font-face {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-display: swap;
-//     src:    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-//             url('../fonts/Montserrat-Bold.woff') format('woff');
-// }
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+            url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src:    url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+            url('../fonts/OpenSans-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'CormorantUpright';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:    url('../fonts/CormorantUpright-Regular.woff2') format('woff2'),
+            url('../fonts/CormorantUpright-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'CormorantUpright';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src:    url('../fonts/CormorantUpright-SemiBold.woff2') format('woff2'),
+            url('../fonts/CormorantUpright-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'CormorantUpright';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:    url('../fonts/CormorantUpright-Bold.woff2') format('woff2'),
+            url('../fonts/CormorantUpright-Bold.woff') format('woff');
+}
