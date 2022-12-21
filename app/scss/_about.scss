@@ -1,0 +1,76 @@
+.about {
+    @include bg;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 136px;
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        background-color: rgba(#040404, 0.5);
+    }
+
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__left,
+    &__right {
+        max-width: 523px;
+        width: 100%;
+    }
+
+    &__left {
+        text-align: right;
+    }
+
+    &__right {
+        text-align: left;
+    }
+
+    &__title {
+        position: relative;
+        margin-bottom: 32px;
+        padding-bottom: 10px;
+        &::after {
+            position: absolute;
+            content:'';
+            width: 40px;
+            height: 9px;
+            background-image: url(../images/spoon-rorate.svg);
+            right: 0;
+            bottom: 0;
+            @include bg;
+        }
+    }
+
+    &__title {
+        &--rotate {
+            &::after {
+                left: 0;
+                background-image: url(../images/spoon.svg);
+                bottom: 0;
+            }
+        }
+    }
+
+    &__text {
+        line-height: 1.75;
+        margin-bottom: 30px;
+    }
+
+    &__images {
+        width: 84px;
+        height: 703px;
+        object-fit: cover;
+        margin: 0 74px 0;
+    }
+}

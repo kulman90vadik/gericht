@@ -1,6 +1,31 @@
 .menu {
     margin-right: 270px;
+
     &__list {
         display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
+    &__link {
+        color: $white;
+        outline: transparent;
+        letter-spacing: 0.04em;
+        transition: color 0.2s ease-in;
+        @media (any-hover:hover) {
+            &:hover {
+                color: $gold;
+            }
+        }
+        &:focus {
+            color: $white;
+        }
+        &:active {
+            color: $white;
+        }
     }
 }

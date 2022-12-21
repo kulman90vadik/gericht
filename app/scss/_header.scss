@@ -1,8 +1,68 @@
 .header {
+    position: fixed;
+    z-index: 100;
+    padding: 32px 0;
+    width: 100%;
+    background-color: $black;
+    transition: padding 0.3s ease-in;
+    &--active {
+        padding: 10px 0;
+        transition: padding 0.3s ease-in;
+    }
 
     &__container {
         display: flex;
         align-items: center;
+    }
+
+    &__btn {
+        color: $white;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 1.75;
+        transition: color 0.2s ease-in;
+        &--login {
+            padding-right: 15px;
+            position: relative;
+            margin-right: 7px;
+            &::after {
+                position: absolute;
+                content: '/';
+                right: 0;
+                color: $white;
+                font-size: 18px;
+            }
+        }
+        &--registration {
+            margin-right: 50px;
+        }
+        @media (any-hover:hover) {
+            &:hover {
+                color: $gold;
+            }
+        }
+        &:focus {
+            color: $white;
+        }
+        &:active {
+            color: $white;
+        }
+    }
+
+    &__box {
+        position: relative;
+        padding: 14px 0 14px 50px;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @include bg;
+            height: 57px;
+            width: 2px;
+            background-image: url(../images/header-line.svg);
+        }
     }
 }
 

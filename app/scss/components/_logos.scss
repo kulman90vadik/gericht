@@ -1,0 +1,31 @@
+.logos {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    &__images {
+        width: 100%;
+        height: 100%;
+        animation: text 12s infinite linear;
+        object-fit: cover;
+    }
+    &__image {
+        position: absolute;
+        width: 65px;
+        height: 62px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes text {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
